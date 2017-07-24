@@ -72,18 +72,16 @@ class Nav extends React.Component{
 	}
 	render(){
 		return (
-			<div>
-				<Grid fluid={true}>
-					<Row className={classNames('nav',{'nav-border':this.state.offsetWidth >768 ? false:true})}>
-						<Col mdOffset={2} md={4} sm={16} xs={16}>
-							<span className="logo-name">
-								YJSON
-							</span>
-						</Col>
-						<NavRight isRender={this.state.offsetWidth > 768 ? true : false}/>
-					</Row>
-				</Grid>
-			</div>
+			<Grid fluid={true}>
+				<Row className={classNames('nav',{'nav-border':this.state.offsetWidth >768 ? false:true})}>
+					<Col mdOffset={2} md={4} sm={16} xs={16}>
+						<span className="logo-name">
+							YJSON
+						</span>
+					</Col>
+					<NavRight isRender={this.state.offsetWidth > 768 ? true : false}/>
+				</Row>
+			</Grid>
 		);
 	}
 }

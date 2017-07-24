@@ -10,10 +10,9 @@ class Home extends React.Component{
 	}
 	render() {
 		return (
-			<div>
-				<CanvasBackground />
+			<div className="main-container">
 				<Nav/>
-
+				<CanvasBackground/>
 				{this.props.children}
 			</div>
 		);

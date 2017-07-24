@@ -1,4 +1,8 @@
 import React from 'react';
+import BackImg from './images/it.jpg'
+import Grid from  'uxcore-grid';
+const { Row , Col } = Grid;
+const Icon = require('uxcore-icon');
 let ctx = null;
 
 // 创建 实例 Color
@@ -132,9 +136,6 @@ class Dots{
 	}	
 }
  
-
-
-
 class CanvasBackground extends React.Component{
 	constructor(props){
 		super(props);
@@ -205,8 +206,30 @@ class CanvasBackground extends React.Component{
 	}
 	render(){
 		return (
-			<div className="canvas-background-container" ref='canvasParentNode' > 
-				<canvas width={this.state.canvasWidth} onMouseMove ={this.canvasMouseMove.bind(this)} onMouseOut ={this.canvasMouseOut.bind(this)} height={this.state.canvasHeight} ref='canvasNode'></canvas>
+			<div className="main-container slognParent">
+				<div className="imgParent">
+					<img className="images" src={BackImg}/>
+				</div>
+				<Grid fluid ={true} className="pages-01">
+					<Row className='slogn'>
+						<Col className="TC first" md={24} xs={24}>
+							 Industry is the parent of success
+						</Col>
+						<Col className="TC two" md={24} xs={24}>
+							<div>千里之行 {'  '} 始于足下</div>
+							 The longest journey begins with the first step
+						</Col>
+						<Col className="TC stree" md={24} xs={24}>
+							 Created by YJSON
+						</Col>
+						<Col className="TC stree" md={24} xs={24}>
+								<Icon className="icon" name="xiala" />
+						</Col>
+					</Row>
+				</Grid>
+				<div className="canvas-background-container" ref='canvasParentNode' > 
+					<canvas width={this.state.canvasWidth} onMouseMove ={this.canvasMouseMove.bind(this)} onMouseOut ={this.canvasMouseOut.bind(this)} height={this.state.canvasHeight} ref='canvasNode'></canvas>
+				</div>
 			</div>
 		);
 	}
