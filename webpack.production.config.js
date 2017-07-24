@@ -38,7 +38,8 @@ module.exports = {
 
     // html 模板插件
     new HtmlWebpackPlugin({
-        template: __dirname + '/src/index.tmpl.html'
+        template: __dirname + '/src/index.tmpl.html',
+        filename:__dirname+'/index.html'
     }),
 
     // 定义为生产环境，编译 React 时压缩到最小
