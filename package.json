@@ -46,7 +46,9 @@
   "dependencies": {
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
+    "redux": "^3.6.0",
     "uxcore": "^0.14.5"
   }
 }
