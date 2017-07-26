@@ -228,7 +228,7 @@ class CanvasBackground extends React.Component{
 					</Row>
 				</Grid>
 				<div className="canvas-background-container" ref='canvasParentNode' > 
-					<canvas width={this.state.canvasWidth} onMouseMove ={this.canvasMouseMove.bind(this)} onMouseOut ={this.canvasMouseOut.bind(this)} height={this.state.canvasHeight} ref='canvasNode'></canvas>
+					<canvas width={this.state.canvasWidth} onMouseMove ={this.canvasMouseMove.bind(this)}  height={this.state.canvasHeight} ref='canvasNode'></canvas>
 				</div>
 			</div>
 		);
