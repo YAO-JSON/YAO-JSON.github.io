@@ -45,9 +45,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     };return n.d(r, "a", r), r;
   }, n.o = function (e, n) {
     return Object.prototype.hasOwnProperty.call(e, n);
-  }, n.p = "/", n.oe = function (e) {
+  }, n.p = "/demo/ele", n.oe = function (e) {
     throw console.error(e), e;
   };
 }([]);
-//# sourceMappingURL=manifest.5a91ad3b17507196f202.js.map
-//# sourceMappingURL=manifest.5a91ad3b17507196f202.js.map
+//# sourceMappingURL=manifest.fb2bd31bcc32e1f8bfdb.js.map
+//# sourceMappingURL=manifest.fb2bd31bcc32e1f8bfdb.js.map
